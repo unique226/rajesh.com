@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logindiv">
+        <input type="text" id="loginput">
+        <br>
+        <button id="logbutton">ENTER</button>
+    </div>
+</body>
+<script>
+    var loginput=document.getElementById('loginput');
+    var logbutton=document.getElementById('logbutton');
+    logbutton.addEventListener('click',function(){
+    if(loginput.value==='RAJESH17/7/2008'){
+        window.location.href='mainpage.html';
+    }
+    else{
+        alert('ONLY SITE OWNER HAS PASSWORD TO ENTER');
+    }
+    });
+   
+</script>
+</html>

@@ -1,0 +1,75 @@
+body{
+    background-size:200% 200%;
+    background:linear-gradient(90deg,rgb(0, 247, 255),rgb(28, 183, 230),rgb(174, 0, 255)) ;
+}
+
+
+/*screen size for mobile*/
+@media screen and (max-width:600px){
+   #logindiv{
+    width: 400px;
+    height: 200px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 3px #00000066;
+    backdrop-filter: blur(90px);
+    
+    animation: animate 3s linear infinite;
+    margin-top: 200px;
+}
+#loginput{
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 30px;
+    background-color: transparent;
+    border: 0.1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px white;
+}
+#logbutton{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 150px;
+    height: 40px;
+    background: transparent;
+    border: 0.1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px white;
+}
+}
+
+/*screen size for laptop*/
+@media  screen and (min-width:748px) {
+    #logindiv{
+    width: 400px;
+    height: 200px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 3px #00000066;
+    backdrop-filter: blur(90px);
+    margin-left: 500px;
+    animation: animate 3s linear infinite;
+    margin-top: 200px;
+}
+#loginput{
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 30px;
+    background-color: transparent;
+    border: 0.1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px white;
+}
+#logbutton{
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 150px;
+    height: 40px;
+    background: transparent;
+    border: 0.1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px white;
+}
+}
