@@ -6,7 +6,34 @@
     <title>MAINPAGE</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    mainpage
+<body style="background: black;">
+   <nav id="nav1">
+    <button id="about">ABOUT</button><br>
+    <button id="condact">CONDACT</button>
+    <button id="menu">MENU</button>
+    <div id="hidden">
+        <button id="projects">PROJECTS</button>
+
+
+    </div>
+</nav>
+<div id="more">
+    <button id="projects">PROJECTS</button>
+</div>
 </body>
+<script>
+    var about=document.getElementById('about');
+    var condact=document.getElementById('condact');
+    var menu=document.getElementById('menu');
+    var more=document.getElementById('more');
+
+//about event
+about.addEventListener('click',function(){
+    window.location.href='about.html';
+})
+//menu events
+menu.addEventListener('click',function(){
+    more.style.top='100px'
+})
+</script>
 </html>
