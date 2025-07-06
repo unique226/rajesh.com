@@ -1,0 +1,25 @@
+@media screen and (max-width:600px) {
+    #qr{
+        width: 400px;
+        height: 400px;
+        box-shadow:  0 0 3px black;
+        border-radius: 3px;
+    }
+    #sp1{
+        margin-top:10px ;
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width:748px) {
+    #qr{
+        width: 400px;
+        height: 400px;
+        box-shadow:  0 0 3px black;
+        border-radius: 3px;
+        margin-left: 500px;
+    }
+    #sp1{
+        margin-top:10px ;
+        margin-left: 50px;
+    }
+}

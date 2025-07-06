@@ -12,13 +12,20 @@
     <button id="condact">CONDACT</button>
     <button id="menu">MENU</button>
     <div id="hidden">
+       
         <button id="projects">PROJECTS</button>
-
+        <button id="exit">EXIT</button>
 
     </div>
 </nav>
 <div id="more">
-    <button id="projects">PROJECTS</button>
+     <button id="close">CLOSE</button>
+     <br>
+    <button id="projectsmob">PROJECTS</button>
+    <br><button id="scocial">
+        SCOCIAL MEDIAS
+    </button>
+     <button id="exit">EXIT</button>
 </div>
 </body>
 <script>
@@ -26,6 +33,11 @@
     var condact=document.getElementById('condact');
     var menu=document.getElementById('menu');
     var more=document.getElementById('more');
+    var close=document.getElementById('close');
+    var projects=document.getElementById('projects');
+    var projectsmob=document.getElementById('projectsmob');
+    var scocial=document.getElementById('scocial');
+    var exit=document.getElementById('exit');
 
 //about event
 about.addEventListener('click',function(){
@@ -33,7 +45,31 @@ about.addEventListener('click',function(){
 })
 //menu events
 menu.addEventListener('click',function(){
-    more.style.top='100px'
+    more.style.top='50px'
+    
+})
+//close event in menu
+close.addEventListener('click',function(){
+    more.style.top='-400px';
+})
+//projects event
+projects.addEventListener('click',function(){
+    window.location.href='projects.html';
+})
+projectsmob.addEventListener('click',function(){
+    window.location.href='projects.html';
+})
+//open scocial medias
+scocial.addEventListener('click',function(){
+    window.location.href='https://www.instagram.com/love_r11p.tvk'
+})
+
+
+//exit fn
+exit.addEventListener('click',function(){
+  if(confirm('EXIT FROM THE PAGE?')){
+      window.location.href='about:blank';
+  }
 })
 </script>
 </html>
