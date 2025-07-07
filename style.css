@@ -67,7 +67,7 @@ body{
     display: flex;
     
 }
-#about,#condact,#menu,#projects,#projectsmob,#scocial,#exit{
+#about,#condact,#menu,#projects,#projectsmob,#scocial,#exit,#exit2{
     width:150px;
     margin-left: 7px;
     margin-top: 10px;
@@ -77,10 +77,11 @@ body{
     color: white;
     border: none;
 }
-#about:hover,#condact:hover,#menu:hover,#projects:hover,#projectsmob:hover,#scocial:hover,#exit:hover{
-    box-shadow: 0 0 3px rgb(0, 123, 255),0 0 15px rgb(152, 4, 251);
-    transition: 1s;
+#about:hover,#condact:hover,#menu:hover,#projects:hover,#projectsmob:hover,#scocial:hover,#exit:hover,#exit2:hover{
+    box-shadow: 0 0 3px black;
+
 }
+
 #projects{
     width: 100px;
 }
@@ -103,6 +104,21 @@ body{
     margin-left: 100px;
     width: 200px;
     transition: 1ms;
+}
+#details{
+    width: 99%;
+    height: 800px;
+    box-shadow: 0 0 34px black;
+    background: rgb(248, 246, 246);
+}
+#details2{
+    background-color: red;
+    width: 500px;
+    height:500px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 100px;
+    box-shadow: 0 0 40px rgb(26, 26, 27);
 }
 
 }
@@ -148,27 +164,27 @@ body{
     margin-top: 50px;
     width: 99%;
     height: 100px;
-    box-shadow: 0 0 10px rgb(126, 2, 251);
+    box-shadow: 0 0 3px black;
     border: 4px solid transparent;
     display: flex;
     
 }
-#about,#condact,#menu,#projects,#projectsmob,#scocial,#exit{
+#about,#condact,#menu,#projects,#projectsmob,#scocial,#exit,#exit2{
     width:250px;
     margin-left: 7px;
     margin-top: 10px;
     height: 80px;
     border-radius: 5px;
     background: transparent;
-    color: white;
+    color: rgb(6, 6, 6);
     border: none;
 }
-#about:hover,#condact:hover,#menu:hover,#projects:hover,#projectsmob:hover,#scocial:hover,#exit:hover{
-    box-shadow: 0 0 3px rgb(0, 123, 255),0 0 15px rgb(152, 4, 251);
-    transition: 1s;
+#about:hover,#condact:hover,#menu:hover,#projects:hover,#projectsmob:hover,#scocial:hover,#exit:hover,#exit2:hover{
+    box-shadow: 0 0 3px black;
+
 }
 #exit{
-    margin-left: 210px;
+    margin-left: 200px;
 
 }
 #more{
@@ -177,7 +193,7 @@ body{
     height: 400px;
     box-shadow: 0 0 3px white;
     top: -400px;
-    background-color: black;
+    background-color: rgb(254, 252, 252);
     border-radius: 5px;
     border:none;
     transition: 2s;
@@ -188,7 +204,21 @@ body{
     width: 200px;
     transition: 1ms;
 }
-
+#details{
+    width: 99%;
+    height: 800px;
+   box-shadow: 0 0 4px #5d07f1;
+    background: rgb(248, 246, 246);
+}
+#details2{
+    background-color: red;
+    width: 500px;
+    height:500px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 100px;
+    box-shadow: 0 0 40px rgb(65, 68, 69);
+}
 
 }
 
@@ -200,7 +230,7 @@ body{
     width: 200px;
     height: 40px;
     box-shadow: 0 0 2px white;
-    color: white;
+    color: rgb(8, 6, 6);
     margin-top: 20px;
     margin-left: 100px;
 

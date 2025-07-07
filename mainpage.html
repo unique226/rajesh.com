@@ -6,7 +6,11 @@
     <title>MAINPAGE</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: black;">
+<body style="background: rgb(244, 240, 240);">
+    <button id="rgb">RGB MODE</button>
+    <button id="normal">NORMAL MODE</button>
+    <br>
+
    <nav id="nav1">
     <button id="about">ABOUT</button><br>
     <button id="condact">CONDACT</button>
@@ -25,7 +29,13 @@
     <br><button id="scocial">
         SCOCIAL MEDIAS
     </button>
-     <button id="exit">EXIT</button>
+     <button id="exit2">EXIT</button>
+</div>
+<br>
+<div id="details" class="details"><br>
+    <div id="details2"><img src="samurai-3840x2160.jpg" width="500px" height="500px" style="border-radius: 100%;"></div>
+    <div id="details3"></div>
+
 </div>
 </body>
 <script>
@@ -37,7 +47,14 @@
     var projects=document.getElementById('projects');
     var projectsmob=document.getElementById('projectsmob');
     var scocial=document.getElementById('scocial');
+      var nav1=document.getElementById('nav1');
+    var details=document.getElementById('details');
+      var details2=document.getElementById('details2');
     var exit=document.getElementById('exit');
+     var exit2=document.getElementById('exit2');
+      var rgb=document.getElementById('rgb');
+    var body=document.getElementById('body');
+       var normal=document.getElementById('normal');
 
 //about event
 about.addEventListener('click',function(){
@@ -71,5 +88,191 @@ exit.addEventListener('click',function(){
       window.location.href='about:blank';
   }
 })
+exit2.addEventListener('click',function(){
+  if(confirm('EXIT FROM THE PAGE?')){
+      window.location.href='about:blank';
+  }
+})
+let colors=['0 0 10px red','0 0 10px blue','0 0 10px aqua'];
+   let i=0;
+   let interval;
+rgb.addEventListener('click',function(){
+   interval=setInterval(()=>{
+    
+    details.style.boxShadow=colors[i];
+    i=(i+1)% colors.length;
+    details.style.transition='2s';
+   },1000);
+   document.body.style.background='black';
+   
+   more.style.background='black';
+   nav1.style.boxShadow='0 0 10px #5d07f1'; 
+   nav1.style.background='black';
+   details.style.background='black';
+   details2.style.boxShadow='0 0 30px aqua';
+   about.style.color='white';
+   exit.style.color='white';
+   exit2.style.color='white';
+   projects.style.color='white';
+   projectsmob.style.color='white';
+   menu.style.color='white';
+   condact.style.color='white';
+   scocial.style.color='white';
+
+   about.addEventListener('mouseover',function(){
+    about.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    about.addEventListener('mouseout',function(){
+    about.style.boxShadow='';
+   })
+    condact.addEventListener('mouseover',function(){
+    condact.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    condact.addEventListener('mouseout',function(){
+    condact.style.boxShadow='';
+   })
+
+
+
+    exit.addEventListener('mouseover',function(){
+    exit.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    exit.addEventListener('mouseout',function(){
+    exit.style.boxShadow='';
+   })
+
+    projects.addEventListener('mouseover',function(){
+    projects.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    projects.addEventListener('mouseout',function(){
+    projects.style.boxShadow='';
+   })
+
+    projectsmob.addEventListener('mouseover',function(){
+    projectsmob.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    projectsmob.addEventListener('mouseout',function(){
+    projectsmob.style.boxShadow='';
+   })
+    scocial.addEventListener('mouseover',function(){
+    scocial.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    scocial.addEventListener('mouseout',function(){
+    scocial.style.boxShadow='';
+   })
+    exit2.addEventListener('mouseover',function(){
+    exit2.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    exit2.addEventListener('mouseout',function(){
+    exit2.style.boxShadow='';
+   })
+    menu.addEventListener('mouseover',function(){
+    menu.style.boxShadow='0 0 3px blue,0 0 6px aqua';
+   })
+    menu.addEventListener('mouseout',function(){
+    menu.style.boxShadow='';
+   })
+   document.body.style.background='black';
+   document.body.style.transition='2s';
+   more.style.transition='2s';
+   nav1.style.transition='2s'; 
+   nav1.style.transition='2s';
+   details.style.transition='2s';
+   details2.style.transition='2s';
+   about.style.transition='2s';
+   exit.style.transition='2s';
+   exit2.style.transition='2s';
+   projects.style.transition='2s';
+   projectsmob.style.transition='2s';
+   menu.style.transition='2s';
+   condact.style.transition='2s';
+   scocial.style.transition='2s';
+
+
+
+
+
+
+
+
+})
+normal.addEventListener('click',function(){
+    clearInterval(interval);
+    details.style.boxShadow='0 0 3px black';
+    document.body.style.background='white';
+    document.body.style.transition='2s';
+
+
+   more.style.background='white';
+   nav1.style.boxShadow='0 0 3px black'; 
+   nav1.style.background='white';
+   details.style.background='white';
+   details2.style.boxShadow='0 0 20px black';
+   about.style.color='black';
+   exit.style.color='black';
+   exit2.style.color='black';
+   projects.style.color='black';
+   projectsmob.style.color='black';
+   menu.style.color='black';
+   condact.style.color='black';
+   scocial.style.color='black';
+
+   about.addEventListener('mouseover',function(){
+    about.style.boxShadow='0 0 3px black';
+   })
+    about.addEventListener('mouseout',function(){
+    about.style.boxShadow='';
+   })
+    condact.addEventListener('mouseover',function(){
+    condact.style.boxShadow='0 0 3px black';
+   })
+    condact.addEventListener('mouseout',function(){
+    condact.style.boxShadow='';
+   })
+
+
+
+    exit.addEventListener('mouseover',function(){
+    exit.style.boxShadow='0 0 3px black';
+   })
+    exit.addEventListener('mouseout',function(){
+    exit.style.boxShadow='';
+   })
+
+    projects.addEventListener('mouseover',function(){
+    projects.style.boxShadow='0 0 3px black';
+   })
+    projects.addEventListener('mouseout',function(){
+    projects.style.boxShadow='';
+   })
+
+    projectsmob.addEventListener('mouseover',function(){
+    projectsmob.style.boxShadow='0 0 3px black';
+   })
+    projectsmob.addEventListener('mouseout',function(){
+    projectsmob.style.boxShadow='';
+   })
+    scocial.addEventListener('mouseover',function(){
+    scocial.style.boxShadow='0 0 3px black';
+   })
+    scocial.addEventListener('mouseout',function(){
+    scocial.style.boxShadow='';
+   })
+    exit2.addEventListener('mouseover',function(){
+    exit2.style.boxShadow='0 0 3px black';
+   })
+    exit2.addEventListener('mouseout',function(){
+    exit2.style.boxShadow='';
+   })
+    menu.addEventListener('mouseover',function(){
+    menu.style.boxShadow='0 0 3px black';
+   })
+    menu.addEventListener('mouseout',function(){
+    menu.style.boxShadow='';
+   })
+    
+})
+
+
 </script>
 </html>
