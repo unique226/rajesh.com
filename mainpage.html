@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background: rgb(244, 240, 240);">
-    <button id="rgb">RGB MODE</button>
-    <button id="normal">NORMAL MODE</button>
+    <button id="rgb">RGB</button>
+    <button id="normal">RGB</button>
     <br>
 
    <nav id="nav1">
@@ -34,7 +34,7 @@
 <br>
 <div id="details" class="details"><br>
     <div id="details2"><img src="samurai-3840x2160.jpg" width="500px" height="500px" style="border-radius: 100%;"></div>
-    <div id="details3"></div>
+    <div id="details3">HELLO ,IAM RAJESH PANDI THIS IS MY PROTFOLIO SITE</div>
 
 </div>
 </body>
@@ -50,6 +50,7 @@
       var nav1=document.getElementById('nav1');
     var details=document.getElementById('details');
       var details2=document.getElementById('details2');
+      var details3=document.getElementById('details3');
     var exit=document.getElementById('exit');
      var exit2=document.getElementById('exit2');
       var rgb=document.getElementById('rgb');
@@ -66,6 +67,7 @@ menu.addEventListener('click',function(){
     
 })
 //close event in menu
+
 close.addEventListener('click',function(){
     more.style.top='-400px';
 })
@@ -93,9 +95,17 @@ exit2.addEventListener('click',function(){
       window.location.href='about:blank';
   }
 })
+normal.style.display='none';
 let colors=['0 0 10px red','0 0 10px blue','0 0 10px aqua'];
    let i=0;
    let interval;
+   const shadows=['-5px -5px 10px red',     
+        '-5px 5px 30px blue',    
+        '5px 5px 40px blueviolet',
+        '5px -5px 10px aqua',
+    
+   ];
+   const box=['inset 3px 3px 6px red'];
 rgb.addEventListener('click',function(){
    interval=setInterval(()=>{
     
@@ -103,8 +113,13 @@ rgb.addEventListener('click',function(){
     i=(i+1)% colors.length;
     details.style.transition='2s';
    },1000);
+   rgb.style.display='none';
+   normal.style.display='block';
+   normal.style.boxShadow=shadows.join(',');
+   close.style.color='white'
    document.body.style.background='black';
-   
+   details3.style.boxShadow='inset 3px 3px 6px aqua,inset -5px -5px 6px aqua';
+   details3.style.color='white';
    more.style.background='black';
    nav1.style.boxShadow='0 0 10px #5d07f1'; 
    nav1.style.background='black';
@@ -173,20 +188,20 @@ rgb.addEventListener('click',function(){
     menu.style.boxShadow='';
    })
    document.body.style.background='black';
-   document.body.style.transition='2s';
-   more.style.transition='2s';
-   nav1.style.transition='2s'; 
-   nav1.style.transition='2s';
-   details.style.transition='2s';
-   details2.style.transition='2s';
-   about.style.transition='2s';
-   exit.style.transition='2s';
-   exit2.style.transition='2s';
-   projects.style.transition='2s';
-   projectsmob.style.transition='2s';
-   menu.style.transition='2s';
-   condact.style.transition='2s';
-   scocial.style.transition='2s';
+   document.body.style.transition='0.1s';
+   more.style.transition='1s';
+   nav1.style.transition='1s'; 
+   nav1.style.transition='1s';
+   details.style.transition='1s';
+   details2.style.transition='1s';
+   about.style.transition='0.1s';
+   exit.style.transition='0.1s';
+   exit2.style.transition='0.1s';
+   projects.style.transition='0.1s';
+   projectsmob.style.transition='0.1s';
+   menu.style.transition='0.1s';
+   condact.style.transition='0.1s';
+   scocial.style.transition='0.1s';
 
 
 
@@ -198,10 +213,14 @@ rgb.addEventListener('click',function(){
 })
 normal.addEventListener('click',function(){
     clearInterval(interval);
+    rgb.style.display='block';
+    close.style.color='black';
+    normal.style.display='none';
     details.style.boxShadow='0 0 3px black';
     document.body.style.background='white';
     document.body.style.transition='2s';
-
+     details3.style.boxShadow='';
+   details3.style.color='black';
 
    more.style.background='white';
    nav1.style.boxShadow='0 0 3px black'; 
