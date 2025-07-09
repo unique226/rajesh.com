@@ -1,297 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAINPAGE</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body style="background: rgb(244, 240, 240);">
     <button id="rgb">RGB</button>
     <button id="normal">RGB</button>
     <br>
 
-   <nav id="nav1">
-    <button id="about">ABOUT</button><br>
-    <button id="condact">CONDACT</button>
-    <button id="menu">MENU</button>
-    <div id="hidden">
-       
-        <button id="projects">PROJECTS</button>
-        <button id="exit">EXIT</button>
+    <nav id="nav1">
+        <button id="about">ABOUT</button><br>
+        <button id="condact">CONDACT</button>
+        <button id="menu">MENU</button>
+        <div id="hidden">
+
+            <button id="projects">PROJECTS</button>
+            <button id="exit">EXIT</button>
+
+        </div>
+    </nav>
+    <div id="more">
+        <button id="close">CLOSE</button>
+        <br>
+        <button id="projectsmob">PROJECTS</button>
+        <br><button id="scocial">
+            SCOCIAL MEDIAS
+        </button>
+        <button id="exit2">EXIT</button>
+    </div>
+    <br>
+    <div id="details" class="details"><br>
+        <div id="details2"><img src="samurai-3840x2160.jpg" width="500px" height="500px" style="border-radius: 100%;">
+        </div>
+        <div id="details3">
+            <p id="p1"><br>IAM RAJESH PANDI THIS IS MY PROTFOLIO SITE</p>
+        </div>
 
     </div>
-</nav>
-<div id="more">
-     <button id="close">CLOSE</button>
-     <br>
-    <button id="projectsmob">PROJECTS</button>
-    <br><button id="scocial">
-        SCOCIAL MEDIAS
-    </button>
-     <button id="exit2">EXIT</button>
-</div>
-<br>
-<div id="details" class="details"><br>
-    <div id="details2"><img src="samurai-3840x2160.jpg" width="500px" height="500px" style="border-radius: 100%;"></div>
-    <div id="details3"><p id="p1"><br>IAM RAJESH PANDI THIS IS MY PROTFOLIO SITE</p></div>
-
-</div>
 </body>
 <script>
-    var about=document.getElementById('about');
-    var condact=document.getElementById('condact');
-    var menu=document.getElementById('menu');
-    var more=document.getElementById('more');
-    var close=document.getElementById('close');
-    var projects=document.getElementById('projects');
-    var projectsmob=document.getElementById('projectsmob');
-    var scocial=document.getElementById('scocial');
-      var nav1=document.getElementById('nav1');
-    var details=document.getElementById('details');
-      var details2=document.getElementById('details2');
-      var details3=document.getElementById('details3');
-    var exit=document.getElementById('exit');
-     var exit2=document.getElementById('exit2');
-      var rgb=document.getElementById('rgb');
-    var body=document.getElementById('body');
-       var normal=document.getElementById('normal');
+    var about = document.getElementById('about');
+    var condact = document.getElementById('condact');
+    var menu = document.getElementById('menu');
+    var more = document.getElementById('more');
+    var close = document.getElementById('close');
+    var projects = document.getElementById('projects');
+    var projectsmob = document.getElementById('projectsmob');
+    var scocial = document.getElementById('scocial');
+    var nav1 = document.getElementById('nav1');
+    var details = document.getElementById('details');
+    var details2 = document.getElementById('details2');
+    var details3 = document.getElementById('details3');
+    var exit = document.getElementById('exit');
+    var exit2 = document.getElementById('exit2');
+    var rgb = document.getElementById('rgb');
+    var body = document.getElementById('body');
+    var normal = document.getElementById('normal');
 
-//about event
-about.addEventListener('click',function(){
-    window.location.href='about.html';
-})
-//menu events
-menu.addEventListener('click',function(){
-    more.style.top='50px'
-    
-})
-//close event in menu
+    //about event
+    about.addEventListener('click', function () {
+        window.location.href = 'about.html';
+    })
+    //menu events
+    menu.addEventListener('click', function () {
+        more.style.top = '50px'
 
-close.addEventListener('click',function(){
-    more.style.top='-400px';
-})
-//projects event
-projects.addEventListener('click',function(){
-    window.location.href='projects.html';
-})
-projectsmob.addEventListener('click',function(){
-    window.location.href='projects.html';
-})
-//open scocial medias
-scocial.addEventListener('click',function(){
-    window.location.href='https://www.instagram.com/love_r11p.tvk'
-})
+    })
+    //close event in menu
+
+    close.addEventListener('click', function () {
+        more.style.top = '-400px';
+    })
+    //projects event
+    projects.addEventListener('click', function () {
+        window.location.href = 'projects.html';
+    })
+    projectsmob.addEventListener('click', function () {
+        window.location.href = 'projects.html';
+    })
+    //open scocial medias
+    scocial.addEventListener('click', function () {
+        window.location.href = 'https://www.instagram.com/love_r11p.tvk'
+    })
 
 
-//exit fn
-exit.addEventListener('click',function(){
-  if(confirm('EXIT FROM THE PAGE?')){
-      window.location.href='about:blank';
-  }
-})
-exit2.addEventListener('click',function(){
-  if(confirm('EXIT FROM THE PAGE?')){
-      window.location.href='about:blank';
-  }
-})
-normal.style.display='none';
-let colors=['0 0 10px red','0 0 10px blue','0 0 10px aqua'];
-   let i=0;
-   let interval;
-   const shadows=['-5px -5px 10px red',     
-        '-5px 5px 30px blue',    
+    //exit fn
+    exit.addEventListener('click', function () {
+        if (confirm('EXIT FROM THE PAGE?')) {
+            window.location.href = 'about:blank';
+        }
+    })
+    exit2.addEventListener('click', function () {
+        if (confirm('EXIT FROM THE PAGE?')) {
+            window.location.href = 'about:blank';
+        }
+    })
+    normal.style.display = 'none';
+    let colors = ['0 0 10px red', '0 0 10px blue', '0 0 10px aqua'];
+    let i = 0;
+    let interval;
+    const shadows = ['-5px -5px 10px red',
+        '-5px 5px 30px blue',
         '5px 5px 40px blueviolet',
         '5px -5px 10px aqua',
-    
-   ];
-   const box=['inset 3px 3px 6px red'];
-rgb.addEventListener('click',function(){
-   interval=setInterval(()=>{
-    
-    details.style.boxShadow=colors[i];
-    i=(i+1)% colors.length;
-    details.style.transition='2s';
-   },1000);
-   rgb.style.display='none';
-   normal.style.display='block';
-   normal.style.boxShadow=shadows.join(',');
-   close.style.color='white'
-   document.body.style.background='black';
-   details3.style.boxShadow='inset 3px 3px 6px aqua,inset -5px -5px 6px aqua';
-   details3.style.color='white';
-   more.style.background='black';
-   nav1.style.boxShadow='0 0 10px #5d07f1'; 
-   nav1.style.background='black';
-   details.style.background='black';
-   details2.style.boxShadow='0 0 30px aqua';
-   about.style.color='white';
-   exit.style.color='white';
-   exit2.style.color='white';
-   projects.style.color='white';
-   projectsmob.style.color='white';
-   menu.style.color='white';
-   condact.style.color='white';
-   scocial.style.color='white';
 
-   about.addEventListener('mouseover',function(){
-    about.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    about.addEventListener('mouseout',function(){
-    about.style.boxShadow='';
-   })
-    condact.addEventListener('mouseover',function(){
-    condact.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    condact.addEventListener('mouseout',function(){
-    condact.style.boxShadow='';
-   })
+    ];
+    const box = ['inset 3px 3px 6px red'];
+    rgb.addEventListener('click', function () {
+        interval = setInterval(() => {
 
+            details.style.boxShadow = colors[i];
+            i = (i + 1) % colors.length;
+            details.style.transition = '2s';
+        }, 1000);
+        rgb.style.display = 'none';
+        normal.style.display = 'block';
+        normal.style.boxShadow = shadows.join(',');
+        close.style.color = 'white'
+        document.body.style.background = 'black';
+        details3.style.boxShadow = 'inset 3px 3px 6px aqua,inset -5px -5px 6px aqua';
+        details3.style.color = 'white';
+        more.style.background = 'black';
+        nav1.style.boxShadow = '0 0 10px #5d07f1';
+        nav1.style.background = 'black';
+        details.style.background = 'black';
+        details2.style.boxShadow = '0 0 30px aqua';
+        about.style.color = 'white';
+        exit.style.color = 'white';
+        exit2.style.color = 'white';
+        projects.style.color = 'white';
+        projectsmob.style.color = 'white';
+        menu.style.color = 'white';
+        condact.style.color = 'white';
+        scocial.style.color = 'white';
 
-
-    exit.addEventListener('mouseover',function(){
-    exit.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    exit.addEventListener('mouseout',function(){
-    exit.style.boxShadow='';
-   })
-
-    projects.addEventListener('mouseover',function(){
-    projects.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    projects.addEventListener('mouseout',function(){
-    projects.style.boxShadow='';
-   })
-
-    projectsmob.addEventListener('mouseover',function(){
-    projectsmob.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    projectsmob.addEventListener('mouseout',function(){
-    projectsmob.style.boxShadow='';
-   })
-    scocial.addEventListener('mouseover',function(){
-    scocial.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    scocial.addEventListener('mouseout',function(){
-    scocial.style.boxShadow='';
-   })
-    exit2.addEventListener('mouseover',function(){
-    exit2.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    exit2.addEventListener('mouseout',function(){
-    exit2.style.boxShadow='';
-   })
-    menu.addEventListener('mouseover',function(){
-    menu.style.boxShadow='0 0 3px blue,0 0 6px aqua';
-   })
-    menu.addEventListener('mouseout',function(){
-    menu.style.boxShadow='';
-   })
-   document.body.style.background='black';
-   document.body.style.transition='0.1s';
-   more.style.transition='1s';
-   nav1.style.transition='1s'; 
-   nav1.style.transition='1s';
-   details.style.transition='1s';
-   details2.style.transition='1s';
-   about.style.transition='0.1s';
-   exit.style.transition='0.1s';
-   exit2.style.transition='0.1s';
-   projects.style.transition='0.1s';
-   projectsmob.style.transition='0.1s';
-   menu.style.transition='0.1s';
-   condact.style.transition='0.1s';
-   scocial.style.transition='0.1s';
+        about.addEventListener('mouseover', function () {
+            about.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        about.addEventListener('mouseout', function () {
+            about.style.boxShadow = '';
+        })
+        condact.addEventListener('mouseover', function () {
+            condact.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        condact.addEventListener('mouseout', function () {
+            condact.style.boxShadow = '';
+        })
 
 
+
+        exit.addEventListener('mouseover', function () {
+            exit.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        exit.addEventListener('mouseout', function () {
+            exit.style.boxShadow = '';
+        })
+
+        projects.addEventListener('mouseover', function () {
+            projects.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        projects.addEventListener('mouseout', function () {
+            projects.style.boxShadow = '';
+        })
+
+        projectsmob.addEventListener('mouseover', function () {
+            projectsmob.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        projectsmob.addEventListener('mouseout', function () {
+            projectsmob.style.boxShadow = '';
+        })
+        scocial.addEventListener('mouseover', function () {
+            scocial.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        scocial.addEventListener('mouseout', function () {
+            scocial.style.boxShadow = '';
+        })
+        exit2.addEventListener('mouseover', function () {
+            exit2.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        exit2.addEventListener('mouseout', function () {
+            exit2.style.boxShadow = '';
+        })
+        menu.addEventListener('mouseover', function () {
+            menu.style.boxShadow = '0 0 3px blue,0 0 6px aqua';
+        })
+        menu.addEventListener('mouseout', function () {
+            menu.style.boxShadow = '';
+        })
+        document.body.style.background = 'black';
+        document.body.style.transition = '0.1s';
+        more.style.transition = '1s';
+        nav1.style.transition = '1s';
+        nav1.style.transition = '1s';
+        details.style.transition = '1s';
+        details2.style.transition = '1s';
+        about.style.transition = '0.1s';
+        exit.style.transition = '0.1s';
+        exit2.style.transition = '0.1s';
+        projects.style.transition = '0.1s';
+        projectsmob.style.transition = '0.1s';
+        menu.style.transition = '0.1s';
+        condact.style.transition = '0.1s';
+        scocial.style.transition = '0.1s';
 
 
 
 
 
 
-})
-normal.addEventListener('click',function(){
-    clearInterval(interval);
-    rgb.style.display='block';
-    close.style.color='black';
-    normal.style.display='none';
-    details.style.boxShadow='0 0 3px black';
-    document.body.style.background='white';
-    document.body.style.transition='2s';
-     details3.style.boxShadow='';
-   details3.style.color='black';
-
-   more.style.background='white';
-   nav1.style.boxShadow='0 0 3px black'; 
-   nav1.style.background='white';
-   details.style.background='white';
-   details2.style.boxShadow='0 0 20px black';
-   about.style.color='black';
-   exit.style.color='black';
-   exit2.style.color='black';
-   projects.style.color='black';
-   projectsmob.style.color='black';
-   menu.style.color='black';
-   condact.style.color='black';
-   scocial.style.color='black';
-
-   about.addEventListener('mouseover',function(){
-    about.style.boxShadow='0 0 3px black';
-   })
-    about.addEventListener('mouseout',function(){
-    about.style.boxShadow='';
-   })
-    condact.addEventListener('mouseover',function(){
-    condact.style.boxShadow='0 0 3px black';
-   })
-    condact.addEventListener('mouseout',function(){
-    condact.style.boxShadow='';
-   })
 
 
+    })
+    normal.addEventListener('click', function () {
+        clearInterval(interval);
+        rgb.style.display = 'block';
+        close.style.color = 'black';
+        normal.style.display = 'none';
+        details.style.boxShadow = '0 0 3px black';
+        document.body.style.background = 'white';
+        document.body.style.transition = '2s';
+        details3.style.boxShadow = '';
+        details3.style.color = 'black';
 
-    exit.addEventListener('mouseover',function(){
-    exit.style.boxShadow='0 0 3px black';
-   })
-    exit.addEventListener('mouseout',function(){
-    exit.style.boxShadow='';
-   })
+        more.style.background = 'white';
+        nav1.style.boxShadow = '0 0 3px black';
+        nav1.style.background = 'white';
+        details.style.background = 'white';
+        details2.style.boxShadow = '0 0 20px black';
+        about.style.color = 'black';
+        exit.style.color = 'black';
+        exit2.style.color = 'black';
+        projects.style.color = 'black';
+        projectsmob.style.color = 'black';
+        menu.style.color = 'black';
+        condact.style.color = 'black';
+        scocial.style.color = 'black';
 
-    projects.addEventListener('mouseover',function(){
-    projects.style.boxShadow='0 0 3px black';
-   })
-    projects.addEventListener('mouseout',function(){
-    projects.style.boxShadow='';
-   })
+        about.addEventListener('mouseover', function () {
+            about.style.boxShadow = '0 0 3px black';
+        })
+        about.addEventListener('mouseout', function () {
+            about.style.boxShadow = '';
+        })
+        condact.addEventListener('mouseover', function () {
+            condact.style.boxShadow = '0 0 3px black';
+        })
+        condact.addEventListener('mouseout', function () {
+            condact.style.boxShadow = '';
+        })
 
-    projectsmob.addEventListener('mouseover',function(){
-    projectsmob.style.boxShadow='0 0 3px black';
-   })
-    projectsmob.addEventListener('mouseout',function(){
-    projectsmob.style.boxShadow='';
-   })
-    scocial.addEventListener('mouseover',function(){
-    scocial.style.boxShadow='0 0 3px black';
-   })
-    scocial.addEventListener('mouseout',function(){
-    scocial.style.boxShadow='';
-   })
-    exit2.addEventListener('mouseover',function(){
-    exit2.style.boxShadow='0 0 3px black';
-   })
-    exit2.addEventListener('mouseout',function(){
-    exit2.style.boxShadow='';
-   })
-    menu.addEventListener('mouseover',function(){
-    menu.style.boxShadow='0 0 3px black';
-   })
-    menu.addEventListener('mouseout',function(){
-    menu.style.boxShadow='';
-   })
-    
-})
+
+
+        exit.addEventListener('mouseover', function () {
+            exit.style.boxShadow = '0 0 3px black';
+        })
+        exit.addEventListener('mouseout', function () {
+            exit.style.boxShadow = '';
+        })
+
+        projects.addEventListener('mouseover', function () {
+            projects.style.boxShadow = '0 0 3px black';
+        })
+        projects.addEventListener('mouseout', function () {
+            projects.style.boxShadow = '';
+        })
+
+        projectsmob.addEventListener('mouseover', function () {
+            projectsmob.style.boxShadow = '0 0 3px black';
+        })
+        projectsmob.addEventListener('mouseout', function () {
+            projectsmob.style.boxShadow = '';
+        })
+        scocial.addEventListener('mouseover', function () {
+            scocial.style.boxShadow = '0 0 3px black';
+        })
+        scocial.addEventListener('mouseout', function () {
+            scocial.style.boxShadow = '';
+        })
+        exit2.addEventListener('mouseover', function () {
+            exit2.style.boxShadow = '0 0 3px black';
+        })
+        exit2.addEventListener('mouseout', function () {
+            exit2.style.boxShadow = '';
+        })
+        menu.addEventListener('mouseover', function () {
+            menu.style.boxShadow = '0 0 3px black';
+        })
+        menu.addEventListener('mouseout', function () {
+            menu.style.boxShadow = '';
+        })
+
+    })
 
 
 </script>
+
 </html>
