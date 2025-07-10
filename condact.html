@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDACT</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <form id="maindiv">
+        <br><br>
+        <label for="NAME" id="lab1">NAME</label><br>
+        <input type="text" id="names" name="NAME" required>
+        <br><br><br>
+        <label for="EMAIL" id="lab2">EMAIL</label><br>
+        <input type="email" id="emails" name="EMAIL" required>
+        <br><br><br>
+        <label for="MESSAGE" id="lab3">MESSAGE</label>
+        <textarea name="MESSAGE" id="message" required cols="3" rows="3"></textarea>
+        <br>
+        <br>
+        <button id="button1">SEND</button>
+    </form>
+
+</body>
+<script>
+    var maindiv=document.getElementById('maindiv');
+    var lab1 = document.getElementById('lab1');
+    var names = document.getElementById('names');
+    var lab2 = document.getElementById('lab2');
+    var message = document.getElementById('message');
+    var lab3 = document.getElementById('lab3');
+    var emails = document.getElementById('emails');
+    var button1=document.getElementById('button1');
+
+    names.addEventListener('focus', function () {
+        lab1.style.color = 'green';
+    });
+    names.addEventListener('blur', function () {
+        lab1.style.color = 'black';
+    });
+    emails.addEventListener('focus', function () {
+        lab2.style.color = 'green';
+    });
+    emails.addEventListener('blur', function () {
+        lab2.style.color = 'black';
+    });
+    message.addEventListener('focus', function () {
+        lab3.style.color = 'green';
+    });
+    message.addEventListener('blur', function () {
+        lab3.style.color = 'black';
+    });
+    
+    var pattern = [/^[^ ]+@[^ ]+\.[a-z]{2,3}$/];
+    emails.matches=pattern;
+    button1.addEventListener('click',function(){
+        maindiv.addEventListener('click',function(){
+  if(names.value.length<4){
+            alert('name is required')
+        
+        }
+         else if(emails.value.length<5){
+           alert('email must be more5')
+
+        }
+        else if(message.value.length<10){
+            alert('MESSAGE MUST BE 10')
+        }
+
+
+
+else{
+    if(names.value.length>5){
+     maindiv.method='post';
+     maindiv.action='https://formspree.io/f/xqabozyk';
+     maindiv.submit();
+    }
+
+    else{
+        alert('s')
+    }
+}
+
+        });
+    });
+      
+</script>
+
+</html>

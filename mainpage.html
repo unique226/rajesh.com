@@ -66,6 +66,12 @@
     about.addEventListener('click', function () {
         window.location.href = 'about.html';
     })
+    //condact
+    condact.addEventListener('click',function(){
+        window.location.href='condact.html';
+    })
+
+
     //menu events
     menu.addEventListener('click', function () {
         more.style.top = '50px'
@@ -92,12 +98,12 @@
     //exit fn
     exit.addEventListener('click', function () {
         if (confirm('EXIT FROM THE PAGE?')) {
-            window.location.href = 'about:blank';
+            window.location.href = 'https://www.google.com';
         }
     })
     exit2.addEventListener('click', function () {
         if (confirm('EXIT FROM THE PAGE?')) {
-            window.location.href = 'about:blank';
+            window.location.href = 'https://www.google.com';
         }
     })
     normal.style.display = 'none';
@@ -123,7 +129,7 @@
         normal.style.boxShadow = shadows.join(',');
         close.style.color = 'white'
         document.body.style.background = 'black';
-        details3.style.boxShadow = 'inset 3px 3px 6px aqua,inset -5px -5px 6px aqua';
+        details3.style.boxShadow = 'inset -1px -1px 1px aqua,inset 1px -1px 1px aqua,inset 1px 1px 1px aqua';
         details3.style.color = 'white';
         more.style.background = 'black';
         nav1.style.boxShadow = '0 0 10px #5d07f1';
